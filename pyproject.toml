@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ai-traffic-analysis"
+version = "0.1.0"
+description = "Traffic analysis using AI models such as Yolo v11 and supervision library."
+authors = ["Szymon Budziak"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "src", from = "." }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+supervision = "^0.24.0"
+ultralytics = "^8.3.24"
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.2.2"
+ipykernel = "^6.29.5"
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
